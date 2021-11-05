@@ -1,0 +1,40 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="loginbox">
+		<img src="logo1.png" class="logo">
+		<h1>Login Here</h1>
+		<form method="post" action="https://script.google.com/macros/s/AKfycbyJM0SiEu8MPdVi8MJlWop63w04_C50YuRBsG2H6hg/dev">
+			<p>Username</p>
+			<input type="text" name="" placeholder="Enter username" id="text1">
+			<p>Password</p>
+			<input type="password" name="" placeholder="Enter Password" id="text2">
+			<input type="button" name="" value="Login" onclick="javascript:validate()">
+		</form>
+		<script type="text/javascript">
+					function validate()
+					{    
+						if(   document.getElementById("text1").value == "healthcenter"
+      							 && document.getElementById("text2").value == "1234" )
+    						{
+									alert( "Login Successful" );
+        							location.href="https://script.google.com/macros/s/AKfycbyJM0SiEu8MPdVi8MJlWop63w04_C50YuRBsG2H6hg/dev?page=Index";
+    						}
+    					else
+    						{
+        										alert( "Login Failed" );
+        										location.href="project.html";
+    						}
+					}
+		</script>
+	</div>
+</body>
+</html>
